@@ -27,7 +27,7 @@ client = discord.Client()
 @tasks.loop(seconds=60)
 async def timeloop():
     print(str(datetime.datetime.now().hour) + "時" + str(datetime.datetime.now().minute) + "分")
-    if datetime.datetime.now().hour == 15 and datetime.datetime.now().minute == 56:
+    if datetime.datetime.now().hour == 15 and datetime.datetime.now().minute == 58:
         # 時報
         # 任意のチャンネルIDを記述
         ch_id = 575801338617921546
@@ -46,4 +46,3 @@ async def timeloop():
 timeloop.start()
 
 # Discord Developer Portalで取得したTOKENを記述しておく。必須。
-client.run('ODQ0OTM5MzU3NTI1NTA4MTA2.YKZtGQ.H5GxPh4ZXt_I-wEmL5UUPPPIPYE')
