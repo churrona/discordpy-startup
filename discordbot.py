@@ -27,7 +27,7 @@ client = discord.Client()
 @tasks.loop(seconds=60)
 async def timeloop():
     print(str(datetime.datetime.now().hour) + "時" + str(datetime.datetime.now().minute) + "分")
-    if datetime.datetime.now().hour == 15 and datetime.datetime.now().minute == 58:
+    if datetime.datetime.now().hour == 16 and datetime.datetime.now().minute == 1:
         # 時報
         # 任意のチャンネルIDを記述
         ch_id = 575801338617921546
