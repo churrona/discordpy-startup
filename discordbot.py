@@ -29,7 +29,7 @@ token = os.environ['DISCORD_BOT_TOKEN']
 @tasks.loop(seconds=60)
 async def timeloop():
     print(str(datetime.datetime.now().hour) + "時" + str(datetime.datetime.now().minute) + "分")
-    if datetime.datetime.now().hour == 16 and datetime.datetime.now().minute == 10:
+    if datetime.datetime.now().hour == 16 and datetime.datetime.now().minute == 14:
         # 時報
         # 任意のチャンネルIDを記述
         ch_id = 575801338617921546
@@ -48,4 +48,4 @@ async def timeloop():
 timeloop.start()
 
 # Discord Developer Portalで取得したTOKENを記述しておく。必須。
-bot.run(token)
+client.run(token)
