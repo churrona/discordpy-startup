@@ -3,6 +3,7 @@ import discord
 from discord.ext import tasks
 import datetime
 import os
+import traceback
 
 # Bot自身のデータをclientに格納する。
 # 必須では無いが後々使えるので入れておくが吉。
