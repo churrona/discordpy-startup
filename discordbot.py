@@ -30,7 +30,7 @@ token = os.environ['DISCORD_BOT_TOKEN']
 @tasks.loop(seconds=60)
 async def timeloop():
     print(str(datetime.datetime.now().hour) + "時" + str(datetime.datetime.now().minute) + "分")
-    if datetime.datetime.now().hour == 16 and datetime.datetime.now().minute == 14:
+    if datetime.datetime.now().hour == 16 and datetime.datetime.now().minute == 22:
         # 時報
         # 任意のチャンネルIDを記述
         ch_id = 575801338617921546
